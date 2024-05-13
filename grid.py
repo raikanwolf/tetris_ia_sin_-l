@@ -23,6 +23,10 @@ class Grid:
             return True
         return False
         
+    def is_empty(self,row,column):
+        if self.grid[row][column]==0:
+            return True
+        return False
     
     def draw (self, screen): #recorre el grid y asigna el valor a las celdas, todas empiezan en 0
         for row in range(self.num_rows):
