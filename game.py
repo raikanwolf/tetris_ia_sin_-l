@@ -32,7 +32,7 @@ class Game:
         
     def move_down(self):
         self.current_block.move(1, 0)
-        if self.block_inside()==False or self.block_fits()==False:
+        if self.block_inside() == False or self.block_fits() == False:
             self.current_block.move(-1, 0)
             self.lock_block()
 #-------------------------------------------   ----------------  
@@ -55,9 +55,9 @@ class Game:
         self.next_block=self.get_random_block()
     
     def block_fits(self):
-        tiles=self.current_block.get_cells_positions()
+        tiles = self.current_block.get_cells_positions()
         for tile in tiles:
-            if self.grid.is_empty(tile.row, tile.column)==False:
+            if self.grid.is_empty(tile.row, tile.column) == False:
                 return False
         return True
     

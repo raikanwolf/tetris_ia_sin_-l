@@ -7,6 +7,9 @@ class Colors:
     purple=(166,0,247)
     cyan=(21,204,209)
     blue=(13,64,216)
+    white=(255,255,255)
+    dark_blue=(44,44,127) #color de fondo
+    light_blue=(59,85,162)
     
     #es un pyhon decorator que permite definir un metodo que puedeser llamado
     #en una clase en lugar de una instancia

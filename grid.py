@@ -65,7 +65,7 @@ class Grid:
                 #asignamos la columna 00 01 21 53 en cada iteracion
                 cell_value=self.grid[row][column]
                                      #     x                    y                    w                     h
-                cell_rect=pygame.Rect(column*self.cell_size+1, row*self.cell_size+1, self.cell_size-1, self.cell_size-1)
+                cell_rect=pygame.Rect(column*self.cell_size+11, row*self.cell_size+11, self.cell_size-1, self.cell_size-1)
             #agregamos esos 1 para separar los cuadrados y dejar ver lineas del color del fondo, en este caso el dark blue
                 # recibe la variable pantalla que creamos en main
                 pygame.draw.rect(screen, self.colors[cell_value], cell_rect)
