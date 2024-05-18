@@ -19,6 +19,12 @@ class Game:
 		pygame.mixer.music.load("Sounds/music.ogg")
 		pygame.mixer.music.play(-1)
 
+	def get_current_block():
+		return self.current_block
+
+	def get_next_block():
+		return self.next_block
+	
 	def update_score(self, lines_cleared, move_down_points):
 		if lines_cleared == 1:
 			self.score += 100
